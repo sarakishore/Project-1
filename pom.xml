@@ -13,6 +13,8 @@
 		<java.version>1.8</java.version>
 		<log4j2.version>2.20.0</log4j2.version>
   </properties>
+
+	<!=== Demo "welcome to Github ==>
   
   <dependencies>
   		<dependency>
