@@ -3,8 +3,7 @@
   <groupId>io.github.mariazevedo88</groupId>
   <artifactId>artigo-boas-praticas-medium</artifactId>
   <version>1.0.0-SNAPSHOT</version>
-	<!=== Demo "welcome to Webhooks==>
-
+	
   <name>artigo-boas-praticas-medium</name>
   <description>Implementações dos exemplos do artigo "Tem um tempinho para conversarmos sobre boas práticas de programação com Java?"</description>
   
