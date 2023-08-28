@@ -37,6 +37,7 @@
            		<configuration>
                 	<source>1.8</source>
                 	<target>1.8</target>
+				https://github.com/sarakishore/project-1.git
             	</configuration>
         	</plugin>
         </plugins>
