@@ -1,0 +1,49 @@
+name: User Approval Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  stage-1-echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Stage 1
+        run: echo "Stage 1: echo"
+
+  stage-2-echo:
+    needs: stage-1-echo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Stage 2
+        run: echo "Stage 2: echo"
+
+  stage-3-create-user:
+    needs: stage-2-echo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create User
+        run: |
+          # Script to create user
+          # Assuming it's a placeholder
+
+  stage-4-reject:
+    if: failure()
+    needs: stage-3-create-user
+    runs-on: ubuntu-latest
+    steps:
+      - name: Reject User
+        run: |
+          # Script to reject user
+          # Assuming it's a placeholder
+
+  stage-5-approve:
+    if: success()
+    needs: stage-3-create-user
+    runs-on: ubuntu-latest
+    steps:
+      - name: Approve User
+        run: |
+          # Script to approve user
+          # Assuming it's a placeholder
